@@ -3,6 +3,7 @@ import React from 'react'
 import axios from 'axios';
 import './App.scss';
 import alanBtn from '@alan-ai/alan-sdk-web';
+import {  sampleNews } from './sampleNews'
 
 class NewsApp extends React.Component {
 
@@ -17,14 +18,7 @@ class NewsApp extends React.Component {
 
   componentDidMount() {
     console.log(window.pageYOffset)
-
-    axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=66508bcb1b0143ef8c95d7774b83ac9a').then(res => {
-      console.log(res.data)
-
-
-      this.setState({ news: res.data.articles })
-
-    })
+    this.setState({ news: sampleNews.articles })
     
       alanBtn({
         key: '7b6566ba40cb0c9b30abeed7189b7f9d2e956eca572e1d8b807a3e2338fdd0dc/stage',
