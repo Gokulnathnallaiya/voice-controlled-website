@@ -35,7 +35,8 @@ $card-height-mobile: 20rem;
 
 .news-card {
   border: 0px solid aqua;
-  margin: 0.5rem;
+  margin: 1rem;
+  
   position: relative;
   height: $card-height-mobile;
   @mixin atLarge {
@@ -158,3 +159,23 @@ $card-height-mobile: 20rem;
 html {
   scroll-behavior: smooth;
 }
+.activeArticle{
+ 
+  border:5px solid rgb(151, 15, 241);
+  box-shadow:  #888888;
+  transform: scale(1.1);
+  
+  z-index:1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
